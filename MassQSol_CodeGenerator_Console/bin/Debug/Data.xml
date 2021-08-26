@@ -1,0 +1,1098 @@
+﻿<db>
+  <entities>
+    <entity_group name="Account">
+      <entity>__MigrationHistory</entity>
+      <entity>AspNetRoles</entity>
+      <entity>AspNetUserClaims</entity>
+      <entity>AspNetUserLogins</entity>
+      <entity>AspNetUserRoles</entity>
+      <entity>AspNetUsers</entity>
+    </entity_group>
+    <entity_group name="Application">
+      <entity>Config</entity>
+    </entity_group>
+    <entity_group name="Document">
+      <entity>Document</entity>
+    </entity_group>
+    <entity_group name="Object">
+      <entity>Object</entity>
+      <entity>ObjectPermission</entity>
+      <entity>ObjectRole</entity>
+      <entity>ObjectType</entity>
+    </entity_group>
+    <entity_group name="Person">
+      <entity>Person</entity>
+      <entity>PersonLogin</entity>
+      <entity>PersonRole</entity>
+      <entity>PersonStatus</entity> 
+      <entity>PersonSession</entity>
+    </entity_group>
+    <entity_group name="Qual">
+      <entity>Qual</entity>
+      <entity>QualSubject</entity>
+      <entity>QualSubjectResource</entity>
+      <entity>QualType</entity>
+      <entity>Subject</entity>
+    </entity_group>
+    <entity_group name="Resource">
+      <entity>Resource</entity>
+      <entity>ResourceSupporting</entity>
+      <entity>ResourceSupportingType</entity>
+      <entity>ResourceType</entity>
+      <entity>ContentType</entity>
+    </entity_group>
+  </entities>
+  <tables>
+    <table name="__MigrationHistory" entity_path="DataModel.Account"></table>
+    <table name="AspNetRoles" entity_path="DataModel.Account"></table>
+    <table name="AspNetUserClaims" entity_path="DataModel.Account"></table>
+    <table name="AspNetUserLogins" entity_path="DataModel.Account"></table>
+    <table name="AspNetUserRoles" entity_path="DataModel.Account"></table>
+    <table name="AspNetUsers" entity_path="DataModel.Account"></table>
+    <table name="Config" entity_path="DataModel.Application"></table>
+    <table name="ContentType" entity_path="DataModel.Resource"></table>
+    <table name="Document" entity_path="DataModel.Document"></table>
+    <table name="Object" entity_path="DataModel.Object"></table>
+    <table name="ObjectPermission" entity_path="DataModel.Object"></table>
+    <table name="ObjectRole" entity_path="DataModel.Object"></table>
+    <table name="ObjectType" entity_path="DataModel.Object"></table>
+    <table name="Person" entity_path="DataModel.Person"></table>
+    <table name="PersonLogin" entity_path="DataModel.Person"></table>
+    <table name="PersonRole" entity_path="DataModel.Person"></table>
+    <table name="PersonSession" entity_path="DataModel.Person"></table>
+    <table name="PersonStatus" entity_path="DataModel.Person"></table>
+    <table name="Qual" entity_path="DataModel.Qual"></table>
+    <table name="QualSubject" entity_path="DataModel.Qual"></table>
+    <table name="QualSubjectResource" entity_path="DataModel.Qual"></table>
+    <table name="Resource" entity_path="DataModel.Resource"></table>
+    <table name="ResourceSupporting" entity_path="DataModel.Resource"></table>
+    <table name="ResourceSupportingType" entity_path="DataModel.Resource"></table>
+    <table name="ResourceType" entity_path="DataModel.Resource"></table>
+    <table name="QualType" entity_path="DataModel.Qual"></table>
+    <table name="Subject" entity_path="DataModel.Qual"></table>
+  </tables>
+<columns>
+  <column name="AccessFailedCount">
+    <table>AspNetUsers</table>
+    <order>11</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="ClaimType">
+    <table>AspNetUserClaims</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="ClaimValue">
+    <table>AspNetUserClaims</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="Config_Value_s">
+    <table>Config</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="Content_s">
+    <table>Resource</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="Content_s">
+    <table>ResourceSupporting</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="ContentType_s">
+    <table>ContentType</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="ContextKey">
+    <table>__MigrationHistory</table>
+    <order>2</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>300</maxLen>
+  </column>
+  <column name="Created_d">
+    <table>Qual</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_d">
+    <table>ResourceSupporting</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_d">
+    <table>Person</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_d">
+    <table>QualSubject</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_d">
+    <table>Document</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_d">
+    <table>Resource</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_Person_ID_s">
+    <table>Resource</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_Person_ID_s">
+    <table>Document</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_Person_ID_s">
+    <table>QualSubject</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_Person_ID_s">
+    <table>Person</table>
+    <order>10</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_Person_ID_s">
+    <table>ResourceSupporting</table>
+    <order>10</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Created_Person_ID_s">
+    <table>Qual</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Document_ContentType_s">
+    <table>Document</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="Document_Description_s">
+    <table>Document</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="Document_Ext_s">
+    <table>Document</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Document_Filename_s">
+    <table>Document</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Document_Location_s">
+    <table>Document</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Document_Size_s">
+    <table>Document</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Email">
+    <table>AspNetUsers</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>256</maxLen>
+  </column>
+  <column name="EmailConfirmed">
+    <table>AspNetUsers</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_ContentType_i">
+    <table>ResourceSupporting</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_ContentType_i">
+    <table>Resource</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Document_ID_s">
+    <table>Resource</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Document_ID_s">
+    <table>ResourceSupporting</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Object_ID_s">
+    <table>ObjectPermission</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Object_Parent_ID_s">
+    <table>Object</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_ObjectRole_ID_i">
+    <table>ObjectPermission</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_ObjectType_ID_i">
+    <table>Object</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Person_ID_s">
+    <table>PersonLogin</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Person_Role_i">
+    <table>Person</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Person_Status_i">
+    <table>Person</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_PersonLogin_ID_s">
+    <table>PersonSession</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Qual_ID_s">
+    <table>QualSubject</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Qual_Type_i">
+    <table>Qual</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_QualSubject_ID_s">
+    <table>QualSubjectResource</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Resource_ID_s">
+    <table>QualSubjectResource</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Resource_ID_s">
+    <table>ResourceSupporting</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_ResourceSupportingType_i">
+    <table>ResourceSupporting</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_ResourceType_i">
+    <table>Resource</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="FK_Subject_i">
+    <table>QualSubject</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Id">
+    <table>AspNetRoles</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>128</maxLen>
+  </column>
+  <column name="Id">
+    <table>AspNetUsers</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>128</maxLen>
+  </column>
+  <column name="Id">
+    <table>AspNetUserClaims</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="LockoutEnabled">
+    <table>AspNetUsers</table>
+    <order>10</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="LockoutEndDateUtc">
+    <table>AspNetUsers</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="LoginProvider">
+    <table>AspNetUserLogins</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>128</maxLen>
+  </column>
+  <column name="MigrationId">
+    <table>__MigrationHistory</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>150</maxLen>
+  </column>
+  <column name="Model">
+    <table>__MigrationHistory</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>varbinary</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="Modified_d">
+    <table>Qual</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_d">
+    <table>Person</table>
+    <order>11</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_d">
+    <table>ResourceSupporting</table>
+    <order>11</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_d">
+    <table>QualSubject</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_d">
+    <table>Document</table>
+    <order>11</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_d">
+    <table>Resource</table>
+    <order>10</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_Person_ID_s">
+    <table>Resource</table>
+    <order>11</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_Person_ID_s">
+    <table>Document</table>
+    <order>10</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_Person_ID_s">
+    <table>QualSubject</table>
+    <order>10</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_Person_ID_s">
+    <table>ResourceSupporting</table>
+    <order>12</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_Person_ID_s">
+    <table>Person</table>
+    <order>12</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Modified_Person_ID_s">
+    <table>Qual</table>
+    <order>10</order>
+    <pk>false</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Name">
+    <table>AspNetRoles</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>256</maxLen>
+  </column>
+  <column name="Name_s">
+    <table>ResourceSupporting</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Name_s">
+    <table>Resource</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Object_Action_s">
+    <table>Object</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Object_Controller_s">
+    <table>Object</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Object_Label_s">
+    <table>Object</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Object_Order_i">
+    <table>Object</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Object_s">
+    <table>Object</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Object_Thumbnail_s">
+    <table>Object</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="ObjectRole_s">
+    <table>ObjectRole</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="ObjectType_s">
+    <table>ObjectType</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PasswordHash">
+    <table>AspNetUsers</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="Person_Archive_b">
+    <table>Person</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="Person_Email_s">
+    <table>Person</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Person_Firstname_s">
+    <table>Person</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Person_Lastname_s">
+    <table>Person</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Person_Telephone_s">
+    <table>Person</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PersonLogin_Attempt_i">
+    <table>PersonLogin</table>
+    <order>10</order>
+    <pk>false</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PersonLogin_Browser_s">
+    <table>PersonLogin</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PersonLogin_BrowserDetails_s">
+    <table>PersonLogin</table>
+    <order>9</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="PersonLogin_Impersonate_b">
+    <table>PersonLogin</table>
+    <order>11</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PersonLogin_IP_s">
+    <table>PersonLogin</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PersonLogin_Login_d">
+    <table>PersonLogin</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PersonLogin_Logout_d">
+    <table>PersonLogin</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PersonLogin_Success_b">
+    <table>PersonLogin</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PersonLogin_Username_s">
+    <table>PersonLogin</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PersonRole_s">
+    <table>PersonRole</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PersonSession_Action_s">
+    <table>PersonSession</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PersonSession_Controller_s">
+    <table>PersonSession</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PersonSession_Created_d">
+    <table>PersonSession</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>datetime</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PersonSession_Parameter_s">
+    <table>PersonSession</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="PersonStatus_s">
+    <table>PersonStatus</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PhoneNumber">
+    <table>AspNetUsers</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="PhoneNumberConfirmed">
+    <table>AspNetUsers</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_ContentType_i">
+    <table>ContentType</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_Document_ID_s">
+    <table>Document</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_Key_s">
+    <table>Config</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="PK_Object_ID_s">
+    <table>Object</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_ObjectPermission_ID_s">
+    <table>ObjectPermission</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_ObjectRole_ID_i">
+    <table>ObjectRole</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_ObjectType_ID_i">
+    <table>ObjectType</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_Person_ID_s">
+    <table>Person</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_PersonLogin_ID_s">
+    <table>PersonLogin</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_PersonRole_i">
+    <table>PersonRole</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_PersonSession_ID_s">
+    <table>PersonSession</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_PersonStatus_i">
+    <table>PersonStatus</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_Qual_ID_s">
+    <table>Qual</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_QualSubject_ID_s">
+    <table>QualSubject</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_QualSubjectResource_ID_s">
+    <table>QualSubjectResource</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_QualType_i">
+    <table>QualType</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_Resource_ID_s">
+    <table>Resource</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_ResourceSupporting_ID_s">
+    <table>ResourceSupporting</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>uniqueidentifier</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_ResourceSupportingType_i">
+    <table>ResourceSupportingType</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_ResourceType_i">
+    <table>ResourceType</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="PK_Subject_i">
+    <table>Subject</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>int</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="ProductVersion">
+    <table>__MigrationHistory</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>32</maxLen>
+  </column>
+  <column name="ProviderKey">
+    <table>AspNetUserLogins</table>
+    <order>2</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>128</maxLen>
+  </column>
+  <column name="Qual_AgeGroup_s">
+    <table>Qual</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Qual_Description_s">
+    <table>Qual</table>
+    <order>3</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Qual_Duration_s">
+    <table>Qual</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Qual_s">
+    <table>Qual</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="QualSubject_Archive_b">
+    <table>QualSubject</table>
+    <order>6</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="QualSubject_Description_s">
+    <table>QualSubject</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="QualSubject_s">
+    <table>QualSubject</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="QualSubjectResource_Archive_b">
+    <table>QualSubjectResource</table>
+    <order>4</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="QualType_s">
+    <table>QualType</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="Resource_Archive_b">
+    <table>Resource</table>
+    <order>7</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="ResourceSupporting_Archive_b">
+    <table>ResourceSupporting</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="ResourceSupportingType_s">
+    <table>ResourceSupportingType</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="ResourceType_s">
+    <table>ResourceType</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="RoleId">
+    <table>AspNetUserRoles</table>
+    <order>2</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>128</maxLen>
+  </column>
+  <column name="SecurityStamp">
+    <table>AspNetUsers</table>
+    <order>5</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>-1</maxLen>
+  </column>
+  <column name="Subject_s">
+    <table>Subject</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>255</maxLen>
+  </column>
+  <column name="TwoFactorEnabled">
+    <table>AspNetUsers</table>
+    <order>8</order>
+    <pk>false</pk>
+    <type>bit</type>
+    <maxLen></maxLen>
+  </column>
+  <column name="UserId">
+    <table>AspNetUserLogins</table>
+    <order>3</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>128</maxLen>
+  </column>
+  <column name="UserId">
+    <table>AspNetUserClaims</table>
+    <order>2</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>128</maxLen>
+  </column>
+  <column name="UserId">
+    <table>AspNetUserRoles</table>
+    <order>1</order>
+    <pk>true</pk>
+    <type>nvarchar</type>
+    <maxLen>128</maxLen>
+  </column>
+  <column name="UserName">
+    <table>AspNetUsers</table>
+    <order>12</order>
+    <pk>false</pk>
+    <type>nvarchar</type>
+    <maxLen>256</maxLen>
+  </column>
+</columns>
+</db>
